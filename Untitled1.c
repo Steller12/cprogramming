@@ -40,11 +40,38 @@ int main(){
 //	scanf("\n");
 //	gets(sen);
 //	printf("%c\n%s\n%s",ch,s,sen);
-	int a;
-	scanf("%d",&a);
-	if((a%3==0) and (a%5==0))
-	printf("%d is divisible by 3 and 5\n",a);
-	else
-	printf("%d is not divisible by 3 and 5\n",a);
+//	int a;
+//	int b;
+//	int c;
+//	scanf("%d",&a);
+//	scanf("%d",&b);
+//	scanf("%d",&c);
+//	if(a>b && a>c)
+//	if(b>c)
+//	printf("%d is second largest",b);
+//	else
+//	printf("%d is second largest",c);
+//	else if(b>a && b>c)
+//	if(a>c)
+//	printf("%d is second largest",a);
+//	else
+//	printf("%d is second largest",c);
+//	else
+//	if(a>b)
+//	printf("%d is second largest",a);
+//	else
+//	printf("%d is second largest",c);
+//	int a=84,b=34,c=97,d=58,e=64;
+//	int f=(a+b+c+d+e)/5;
+//	if (f>=80 && a<=100)
+//	printf("A");
+//	else if(f>=60 && f<=79)
+//	printf("B");
+//	else if(f>=40 && f<=59)
+//	printf("C");
+//	else
+//	printf("D");
+	int a=5;
+	a%2==0?printf("even"):printf("odd");
 	return 0;
 }
