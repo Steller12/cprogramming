@@ -71,7 +71,100 @@ int main(){
 //	printf("C");
 //	else
 //	printf("D");
-	int a=5;
-	a%2==0?printf("even"):printf("odd");
-	return 0;
+//	int a=5;
+//	a%2==0?printf("even"):printf("odd");
+//int a;
+//scanf("%d",&a);
+//switch(a)
+//{
+//	case 1:
+//		printf("jan");
+//		break;
+//	case 2:
+//		printf("feb");
+//		break;
+//	case 3:
+//		printf("march");
+//		break;
+//	case 4:
+//		printf("april");
+//		break;
+//	case 5:
+//		printf("may");
+//		break;
+//	case 6:
+//		printf("june");
+//		break;
+//	case 7:
+//		printf("july");
+//		break;
+//	case 8:
+//		printf("aug");
+//		break;
+//	case 9:
+//		printf("sep");
+//		break;
+//	case 10:
+//		printf("oct");
+//		break;
+//	case 11:
+//		printf("nov");
+//		break;
+//	case 12:
+//		printf("dec");
+//		break;
+//	default:
+//		printf("invalid input");
+//		break;
+//}
+//	int a,b;
+//	char c;
+//	printf("Enter the opperation you want to perform:");
+//	scanf("%c",&c);
+//	printf("Enter first number:");
+//	scanf("%d",&a);
+//	printf("Enter second number:");
+//	scanf("%d",&b);
+//	switch(c)
+//	{
+//		case '+':
+//			printf("%d",a+b);
+//			break;
+//		case '-':
+//			printf("%d",a-b);
+//			break;
+//		case '*':
+//			printf("%d",a*b);
+//			break;
+//		case '/':
+//			printf("%d",a/b);
+//			break;
+//	}
+//	int a;
+//	scanf("%d",&a);
+//	int b=1;
+//	while (b<11){
+//		printf("%d * %d = %d\n",a,b,a*b);
+//		b=b+1;
+//	}
+//	int a;
+//	scanf("%d",&a);
+//	int b=1;
+//	int sum=0;
+//	while (b<a){
+//		if (a%b==0)
+//		sum=sum+b;
+//		b=b+1;
+//	}
+//	if (sum==a)
+//	printf("%d is a perfect number",a);
+//	else
+//	printf("%d is not a perfect number",a);
+	int n,sum=0;
+	scanf("%d",&n);
+	while (n>0){
+		sum=sum+n;
+		n=n-1;
+	}
+	printf("%d",sum);
 }
