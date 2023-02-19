@@ -160,11 +160,29 @@ int main(){
 //	printf("%d is a perfect number",a);
 //	else
 //	printf("%d is not a perfect number",a);
-	int n,sum=0;
-	scanf("%d",&n);
-	while (n>0){
-		sum=sum+n;
-		n=n-1;
-	}
-	printf("%d",sum);
+//	int n,sum=0;
+//	scanf("%d",&n);
+//	while (n>0){
+//		sum=sum+n;
+//		n=n-1;
+//	}
+//	printf("%d",sum);
+//in for loop we start with initialization(giving value to a temporary variable) 2nd giving conditions to that variable and 3rd i.e. iteration or updation after a loop how should it add or sub to the variable 
+//	int i,j;
+//	for (i=1;i<=5000;i++){
+//		printf("%d\n",i);
+//	}
+//factorial of a number using for loop
+//	int n,i,fact=1;
+//	scanf("%d",&n);
+//	for(i=1;i<=n;i++){
+//		fact=fact*i;
+//	}
+//	printf("%d",fact);
+//	int i=10;
+//	do{
+//		printf("%d\n",i);
+//		i++;
+//	}while(i<21);
+	
 }
