@@ -1,5 +1,6 @@
 #include<stdio.h>
-int main(){
+#include<math.h>
+//int main(){
 //	int a=5;
 //	int d=++a;
 //	int b=5;
@@ -184,5 +185,70 @@ int main(){
 //		printf("%d\n",i);
 //		i++;
 //	}while(i<21);
-	
+//	reverse a number
+//find if the given number is armstrong or not
+//	int num,remainder,reverse=0;
+//	scanf("%d",&num);
+//	while (num > 0)
+//    {
+//        remainder = num % 10;
+//        reverse = reverse * 10 + remainder;
+//        num /= 10;
+//    }
+//    printf("%d",reverse);
+//	int a,b=0,c,d;
+//	scanf("%d",&a);
+//	d=a;
+//	while (d!=0){
+//		c=d%10;
+//		b=b+pow(c,3);
+//		d=d/10;
+//	}
+//	printf("%d\n",b);
+//	if(a==b)
+//	printf("armstrong");
+//	else
+//	printf("not");
+//}
+//void sum(){
+//	int a,b;
+//	printf("enter the values:");
+//	scanf("%d %d",&a,&b);
+//	printf("sum=%d",a+b);
+//}
+//void main(){
+//	sum();
+//}
+//void fact(){
+//	int a,i;
+//	printf("enter the values:");
+//	scanf("%d",&a);
+//	for(i=1;i<=a;i++){
+//		if(a%i==0)
+//		printf("%d\n",i);
+//		else
+//		continue;
+//	}
+//}
+//void main(){
+//	fact();
+//}
+void count(){
+	int a,i,n;
+	n=0;
+	printf("enter the values:");
+	scanf("%d",&a);
+	for(i=0;i<a;i++){
+		if(i==(a%10)){
+		a=a%10;
+		n=n+1;
+	}
+		else{
+		continue;
+	}
+	}
+	printf("%d",n);
+}
+void main(){
+	count();
 }
