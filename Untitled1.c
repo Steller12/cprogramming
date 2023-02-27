@@ -233,22 +233,60 @@
 //void main(){
 //	fact();
 //}
-void count(){
-	int a,i,n;
-	n=0;
-	printf("enter the values:");
+//void count(){
+//	int a,count=0;
+//	printf("enter a number");
+//	scanf("%d",&a);
+//	while(a!=0){
+//		a=a/10;
+//		count++;
+//	}
+//	printf("%d",count);
+//}
+//void main(){
+//	count();
+//}
+//int func(){
+//	int i,a,sum=0;
+//	scanf("%d",&a);
+//	for(i=0;i<a;i++){
+//		sum=sum+i;
+//	}
+//	return sum;
+//}
+//void main(){
+//	int c=func();
+//	printf("%d",c);
+//}
+//create 2 userdefined function one function to check if the given number is positive or negative and if the value is positive return the value to another function whether it is even and odd
+//#include<math.h>
+int pos();
+int eve();
+int pos(){
+	int a;
 	scanf("%d",&a);
-	for(i=0;i<a;i++){
-		if(i==(a%10)){
-		a=a%10;
-		n=n+1;
+	if(a>0){
+		printf("positive\n");
+		return a;
 	}
-		else{
-		continue;
+	else{
+		printf("negative\n");
+		return a;
 	}
+}
+int ev(){
+	int b=pos();
+	if(b%2!=0)
+	{
+		printf("odd");
+		return b;
 	}
-	printf("%d",n);
+	else{
+		printf("even");
+		return b;
+	}
 }
 void main(){
-	count();
+int c=ev();
+	printf(c);
 }
