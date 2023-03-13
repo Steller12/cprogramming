@@ -260,33 +260,87 @@
 //}
 //create 2 userdefined function one function to check if the given number is positive or negative and if the value is positive return the value to another function whether it is even and odd
 //#include<math.h>
-int pos();
-int eve();
-int pos(){
-	int a;
-	scanf("%d",&a);
-	if(a>0){
-		printf("positive\n");
-		return a;
-	}
-	else{
-		printf("negative\n");
-		return a;
-	}
-}
-int ev(){
-	int b=pos();
-	if(b%2!=0)
-	{
-		printf("odd");
-		return b;
-	}
-	else{
-		printf("even");
-		return b;
-	}
-}
-void main(){
-int c=ev();
-	printf(c);
+//int pos();
+//int eve();
+//int pos(){
+//	int a;
+//	scanf("%d",&a);
+//	if(a>0){
+//		printf("positive\n");
+//		return a;
+//	}
+//	else{
+//		printf("negative\n");
+//		return a;
+//	}
+//}
+//int ev(){
+//	int b=pos();
+//	if(b%2!=0)
+//	{
+//		printf("odd");
+//		return b;
+//	}
+//	else{
+//		printf("even");
+//		return b;
+//	}
+//}
+//void main(){
+//int c=ev();
+//	printf(c);
+//}
+//int sum(int a);
+//int main(){
+//	int n;
+//	printf("Enter the number:");
+//	scanf("%d",&n);
+//	printf("%d",sum(n));
+//}
+//int sum(int a){
+//	if(a==1)
+//	return 1;
+//	else
+//	return a + sum(a-1);
+//}
+//recurssion function to find factorial of a number
+//int fact(int a);
+//int main(){
+//	int n;
+//	printf("Enter the number");
+//	scanf("%d",&n);
+//	printf("%d",fact(n));
+//}
+//int fact(int a){
+//	if(a==0)
+//	return 1;
+//	else
+//	return a * fact(a-1);
+//}
+//int fibonacci(int n);
+//int main()
+//{
+//    int n, i;
+//    printf("Enter the number of terms: ");
+//    scanf("%d", &n);
+//    printf("Fibonacci series: ");
+//    for (i = 0; i < n; i++)
+//    {
+//        printf("%d ", fibonacci(i));
+//    }
+//    return 0;
+//}
+//int fibonacci(int n)
+//{
+//    if (n == 0)
+//        return 0;
+//    else if (n == 1)
+//        return 1;
+//    else
+//        return (fibonacci(n - 1) + fibonacci(n - 2));
+//}
+int main(){
+	int a=6,b=7;
+	printf("%d %d %d %d %d %d",--a,a--,b---a,a+b,a--,++b);
+	return 0;
 }
