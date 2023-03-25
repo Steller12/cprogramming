@@ -339,8 +339,79 @@
 //    else
 //        return (fibonacci(n - 1) + fibonacci(n - 2));
 //}
+//int main(){
+//	int a=6,b=7;
+//	printf("%d %d %d %d %d %d",--a,a--,(b--)-a,a+b,a--,++b);
+//	return 0;
+//}
+//int main()
+//{
+//    while(1)    
+//    {
+//        printf("RABBIT");
+//        break;
+//    }
+//    
+//    return 0;
+//}
+
+//int main()
+//{
+//    int a=5;
+//    
+//    while(a=123)    
+//    {
+//        printf("RABBIT\n");
+//    }
+//    printf("GREEN");
+//    printf("%d\n",a);
+//    
+//    return 0;
+//}
+//int main()
+//{
+//    int k, j;
+//    j = 10;
+//    for(k=1; k <= 5; k++)
+//    {
+//        printf("%d ", (k+j));
+//    }
+//
+//    return 0;
+//}
+//int main()
+//{
+//    int k;
+//    for(;;)
+//    {
+//        printf("TESTING\n");
+//        break;
+//    }
+//
+//    return 0;
+//}
+//int main(){
+//	int a=10;
+//	printf("%X%x%ci%x",11,10,'s',12);
+//}
+//int main(){
+//	int i,j,k,l;
+//	int a[7]={1,2,3,4,5,6,7};
+//	l=0;
+//	for(i=0;i<7;i++){
+//		if (i%2==0)
+//		printf("%d\n",a[i]);
+//		else
+//		continue;
+//	}
+//}
 int main(){
-	int a=6,b=7;
-	printf("%d %d %d %d %d %d",--a,a--,b---a,a+b,a--,++b);
-	return 0;
+	int i,j,k,l;
+	scanf("%d %d %d",&j,&k,&l);
+	int a[3]={j,k,l};
+	int b[3]={};
+	for(i=0;i<3;i++){
+		b[i]=a[i]*2;
+		printf("%d\n",b[i]);
+	}
 }
