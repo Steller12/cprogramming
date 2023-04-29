@@ -405,13 +405,263 @@
 //		continue;
 //	}
 //}
+//int main(){
+//	int i,j,k,l;
+//	scanf("%d %d %d",&j,&k,&l);
+//	int a[3]={j,k,l};
+//	int b[3]={};
+//	for(i=0;i<3;i++){
+//		b[i]=a[i]*2;
+//		printf("%d\n",b[i]);
+//	}
+//}
+//int main(){
+//	int l;
+//	int i[3]={1,2,3};
+//	int j[3]={4,5,6};
+//	int k[3]={};
+//	for(l=0;l<3;l++){
+//		k[l]=i[l]+j[l];
+//	printf("%d\n",k[l]);
+//	}
+//}
+//int main() {
+//	int i;
+//    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//    int size = 10;
+//    int indexToDelete = 5;
+//    for(i = indexToDelete; i < size - 1; i++) {
+//        arr[i] = arr[i + 1];
+//    }
+//    size--;
+//    for(i = 0; i < size; i++) {
+//        printf("%d ", arr[i]);
+//    }
+//    printf("\n");
+//
+//    return 0;
+//}
+// Write a c program to perform the addition of two 1D array and store it in a new array
+
+/* #include<stdio.h>
 int main(){
-	int i,j,k,l;
-	scanf("%d %d %d",&j,&k,&l);
-	int a[3]={j,k,l};
-	int b[3]={};
-	for(i=0;i<3;i++){
-		b[i]=a[i]*2;
-		printf("%d\n",b[i]);
-	}
+    int size,i;
+    printf("Enter the size of array: ");
+    scanf("%d",&size);
+    int a1[size],a2[size],a3[size];
+    for(i=0;i<size;i++){
+        scanf("%d",&a1[i]);
+    }
+    for(i=0;i<size;i++){
+        scanf("%d",&a2[i]);
+    }
+    for(i=0;i<size;i++){
+        a3[i] = a1[i]+a2[i];
+        printf("%d ",a3[i]);
+    }
+} */
+
+
+
+
+//Inserting a new element in the array
+
+/* #include<stdio.h>
+int main(){
+    int array[100], n,i,position,value;
+    printf("Enter the size of array: ");
+    scanf("%d",&n);
+    printf("Enter %d elements: ",n);
+    for(i=0;i<n;i++){
+        scanf("%d",&array[i]);
+    }
+    printf("Enter the position where you wish to insert an element: ");
+    scanf("%d",&position);
+    printf("Enter the value to insert: ");
+    scanf("%d",&value);
+    for(i=n;i>=position-1;i--){
+        array[i+1]=array[i];
+    }
+    array[position-1] = value;
+    printf("Resultanat array is: ");
+    for(i=0;i<=n;i++){
+        printf("%d ",array[i]);
+    }
+} */
+
+
+
+
+// Deleting an element from array
+
+/* #include<stdio.h>
+int main(){
+    int a[100],n,i,position;
+    printf("Enter the size of array: ");
+    scanf("%d",&n);
+    printf("Enter the values for array A: ");
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    printf("Enter the position to be deleted: ");
+    scanf("%d",&position);
+    for(i=position-1;i<n;i++){
+        a[i] = a[i+1];
+    }
+    for(i=0;i<n-1;i++){
+        printf("%d ",a[i]);
+    }
+} */
+
+
+
+
+// 2-D ARRAY
+
+//#include<stdio.h>
+//int main(){
+//    int n,m;
+//    printf("Enter the number of rows: ");
+//    scanf("%d",&n);
+//    printf("Enter the number of column: ");
+//    scanf("%d",&m);
+//    int a[n][m],i,j;
+//    for(i=0;i<n;i++){
+//        for(j=0;j<m;j++){
+//            printf("a[%d][%d]: ",i,j);
+//            scanf("%d",&a[i][j]);
+//        }
+//    }
+//    printf("First diagonal elements: ");
+//    for(i=0;i<n;i++){
+//        for(j=0;j<m;j++){
+//        if(i==j)   // First diagonal element
+//        printf("%d\t ",a[i][j]);
+//    }
+//    }
+//    printf("\nSecond Diagonal elements: ");
+//
+//    for(i=0;i<n;i++){
+//        for(j=0;j<m;j++){
+//            if(i+j==n-1)  // Second diagonal element
+//            printf("%d\t ",a[i][j]);
+//        }
+//    }
+//    printf("\nTranspose of matrix:\n");
+//
+//    for(i=0;i<n;i++){
+//        for(j=0;j<m;j++){
+//            printf("%d ",a[j][i]);
+//        }
+//        printf("\n");
+//    }
+//
+//}
+//void main(){
+//	int a=5,b=6,c;
+//	c=b;
+//	b=a;
+//	a=c;
+//	printf("%d\n%d",a,b);
+//}
+//struct student{
+//	char name[20];
+//	int roll_no;
+//	float maths;
+//	float science;
+
+//};
+//int main(){
+//	struct student stu1;
+//	gets(stu1.name);
+//	scanf("%d",&stu1.roll_no);
+//	scanf("%f",&stu1.maths);
+//	scanf("%f",&stu1.science);
+//	scanf("%f",&stu1.english);
+//	printf("%s %d %f %f %f",stu1.name,stu1.roll_no,stu1.maths,stu1.science,stu1.english);	
+//}
+//struct person{
+//	char name[20];
+//	int age;
+//	struct student{
+//		int regno;
+//	}s;
+//};
+//void main(){
+//	struct person p;
+////	struct student s; it will give compiler error
+//	scanf("%s",&p.name);
+//	scanf("%d",&p.age);
+//	scanf("%d",&p.s.regno);
+//	printf("%s %d %d",p.name,p.age,p.s.regno);
+//}
+//struct student{
+//	char name[20];
+//	int regno;
+//	int sub[3];
+//};
+//void calculate(struct student s){
+//	printf("%d",(s.sub[0]+s.sub[1]+s.sub[2])/3);	
+//}
+//void main(){
+//	struct student st;
+//	printf("enter the marks obtaines in 3 subjects\n");
+//	scanf("%d %d %d",&st.sub[0],&st.sub[1],&st.sub[2]);
+//	calculate(st);
+//}
+//create a structure book which contain name, publishing year and price get the input from the user to record and write the value into a new file
+//struct book{
+//	char bookname;
+//	int year;
+//	float price;
+//}b1;
+//int main(){
+//	FILE *f1;
+//	printf("enter the values:\n");
+//	scanf("%s",&b1.bookname);
+//	scanf("%d",&b1.year);
+//	scanf("%f",&b1.price);
+//	f1=fopen("zero.txt","w+");
+//	fwrite(&b1,sizeof(b1),1,f1);
+//	fread(&b1,sizeof(b1),1,f1);
+//	printf("%s %d %f",b1.bookname,b1.year,b1.price);
+//	fclose(f1);
+//}
+//fwrite(structure,sizeofstructure,how many records,pointer for fie); same goes with fread
+//int main(){
+//	int a,b;
+//	char c;
+//	printf("Enter the opperation you want to perform:");
+//	scanf("%c",&c);
+//	printf("Enter first number:");
+//	scanf("%d",&a);
+//	printf("Enter second number:");
+//	scanf("%d",&b);
+//	switch(c)
+//	{
+//		case '+':
+//			printf("%d",a+b);
+//			break;
+//		case '-':
+//			printf("%d",a-b);
+//			break;
+//		case '*':
+//			printf("%d",a*b);
+//			break;
+//		case '/':
+//			printf("%d",a/b);
+//			break;
+//	}
+//}
+//strncpy and strcat and strcmp for catenation of string 
+#include <string.h>
+void main(){
+	char st[]="123@abc";
+	char st1[10];
+	strncpy(st1,st,3);
+	printf("%s\n",st1);
+	printf("%d\n",strlen(st1));
+	strncat(st1,st,2);
+	printf("%s\n",st1);
+	printf("%d",strcmp(st,st));
 }
