@@ -655,13 +655,22 @@ int main(){
 //}
 //strncpy and strcat and strcmp for catenation of string 
 #include <string.h>
-void main(){
-	char st[]="123@abc";
-	char st1[10];
-	strncpy(st1,st,3);
-	printf("%s\n",st1);
-	printf("%d\n",strlen(st1));
-	strncat(st1,st,2);
-	printf("%s\n",st1);
-	printf("%d",strcmp(st,st));
-}
+//void main(){
+//	char st[]="123@abc";
+//	char st1[10];
+//	strncpy(st1,st,3);
+//	printf("%s\n",st1);
+//	printf("%d\n",strlen(st1));
+//	strncat(st1,st,2);
+//	printf("%s\n",st1);
+//	printf("%d",strcmp(st,st));
+//}
+//int main(){
+//	char st='a' +1;
+//	printf("%c\n",st);
+//	printf("%c\n",st++);
+//	printf("%d",st);
+//}
+//malloc calloc realloc free is used for dynamic memory allocation in c and c++ not in java or python
+
+
